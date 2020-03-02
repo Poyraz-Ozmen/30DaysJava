@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class tutorial4 {
 
-	Collection<String> stuff;
+	//Collection<String> stuff;
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		
@@ -39,10 +39,19 @@ public class tutorial4 {
 		for (int i = 0; i<students.size(); i++) {
 			System.out.println(students.get(i));
 		}
-		tutorial4 p = new tutorial4();
-		p.stuff = new LinkedList<String>();
 		
-		// we did not get any errors because stuff is implemented as a collection 
+		//tutorial4 p = new tutorial4();
+		//p.stuff = new LinkedList<String>();
+		// in above commented 2 lines and, we did not get any errors because stuff is implemented as a collection 
 		// so we can return any type of the collection
+		
+		LinkedList<String> names = new LinkedList<String>();
+		names.add("Caleb");
+		names.add("Sue");
+		names.add("Sally");
+		
+		System.out.println(names.remove());
+		System.out.println(names.remove());
+		System.out.println(names.remove());
 	}
 }
