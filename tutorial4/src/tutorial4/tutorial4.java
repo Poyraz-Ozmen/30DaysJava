@@ -21,6 +21,11 @@ public class tutorial4 {
 		
 		Scanner in = new Scanner(new File("students.txt"));
 		List<String> students = new ArrayList<String>();
+		// left side we use list, on the right we used implementation of list
+		// arraylist is collection of list
+		// left side is collection interface
+		// check collection on dosc.oracle-java collection 
+		
 		while(in.hasNextLine()) {
 			students.add(in.nextLine());
 			//System.out.println(in.nextLine());
